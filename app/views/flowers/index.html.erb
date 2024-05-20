@@ -1,0 +1,31 @@
+<h1>GeekTwitter</h1>
+<h3>Flower一覧</h3>
+<h3>投稿を検索</h3>
+ <%= form_tag({controller:"flowers",action:"index"}, method: :get) do %>
+   <%= text_field_tag :search %>
+   <%= submit_tag '検索する'  %>
+<% end %>
+
+
+
+
+
+
+<%= link_to "新規投稿へ", new_flower_path %>
+<div class="flowers-container">
+  <% @flowers.each do |t| %>
+  <div class="flower">
+
+  <%= image_tag t.image_url, size: "250x200" if t.image? %>
+  <%= t.user.email %>
+    <%= t.body %>
+    <%= t.created_at %>
+    <%= link_to "詳細へ", flower_path(t.id) %>  
+  <%= link_to "編集する", edit_flower_path(t.id) %>
+  <%= button_to "削除する", flower_path(t.id), method: :delete %>  
+ <h1>香水診断スタート</h1>
+<%= link_to "診断を始める", new_flower_path, class: "link" %>
+
+  </div>
+  <% end %>
+</div>
