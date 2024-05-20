@@ -23,8 +23,6 @@
     <%= link_to "詳細へ", flower_path(t.id) %>  
   <%= link_to "編集する", edit_flower_path(t.id) %>
   <%= button_to "削除する", flower_path(t.id), method: :delete %>  
- <h1>香水診断スタート</h1>
-<%= link_to "診断を始める", new_flower_path, class: "link" %>
 
   </div>
   <% end %>

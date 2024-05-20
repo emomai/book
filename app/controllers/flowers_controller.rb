@@ -8,7 +8,7 @@ def top
       @flowers = Flower.all
       search = params[:search]
       @flowers = @flowers.joins(:user).where("body LIKE ?", "%#{search}%") if search.present?
-        end
+        
    end
 
 
@@ -20,22 +20,19 @@ def top
 
     def create
       flower = Flower.new(flower_params)
-
-      flower.user_id = current_user.id
-      if flower.save
-        flash[:notice] = "診断が完了しました"
-        redirect_to perfume_path(perfume.id) 
+      if flower.save!
+        redirect_to :action => "index"
       else
         redirect_to :action => "new"
       end
     end
 
      def show
-        @Flower=Flower.find(params[:id])
+        @flower = Flower.find(params[:id])
       end
 
       def edit
-        @Flower = Flower.find(params[:id])
+        @flower = Flower.find(params[:id])
       end
 
 
@@ -57,9 +54,9 @@ def update
 
       private
   def flower_params
-    params.require(:flower).permit(:body, :image,:question1, :question2, :question3, :question4)
+    params.require(:flower).permit(:title, :body, :image)
   end
-
+end
 
 
 

@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   end
   namespace :admin do
     get 'pages/home'
-    root to: 'pages#home'
     resources :orders, only: %i[show update]
     resources :users, only: %i[index show update]
   end
@@ -59,6 +58,7 @@ Rails.application.routes.draw do
   get 'flowers/top' => 'flowers#top'
   get "shops/home" => "shops#home"
   resources :flowers 
+  resources :perfumes
   root 'flowers#top'
 
  
