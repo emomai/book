@@ -1,7 +1,7 @@
 class Admin::UsersController < ApplicationController
 
     before_action :authenticate_admin!
-    before_action :set_customer, only: %i[show update]
+    before_action :set_user, only: %i[show update]
   
     def index
       @users = User.latest

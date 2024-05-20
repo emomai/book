@@ -2,7 +2,7 @@ class User::CheckoutsController < ApplicationController
     before_action :authenticate_user!
   
     def create
-      line_items = current_customer.line_items_checkout
+      line_items = current_user.line_items_checkout
       session = create_session(line_items)
       # Allow redirection to the host that is different to the current host
       redirect_to session.url, allow_other_host: true
@@ -13,7 +13,7 @@ class User::CheckoutsController < ApplicationController
     def create_session(line_items)
       Stripe::Checkout::Session.create(
         client_reference_id: current_user.id,
-        customer_email: current_user.email,
+        user_email: current_user.email,
         mode: 'payment',
         payment_method_types: ['card'],
         line_items:,

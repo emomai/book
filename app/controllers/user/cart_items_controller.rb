@@ -30,7 +30,7 @@ class User::CartItemsController < ApplicationController
   private
 
   def set_cart_item
-    @cart_item = current_customer.cart_items.find(params[:id])
+    @cart_item = current_user.cart_items.find(params[:id])
   end
 
   def increase_or_create(product_id)

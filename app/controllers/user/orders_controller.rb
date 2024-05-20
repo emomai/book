@@ -1,12 +1,12 @@
 class User::OrdersController < ApplicationController
-  before_action :authenticate_customer!
+  before_action :authenticate_user!
   
     def index
-      @orders = current_customer.orders.latest
+      @orders = current_user.orders.latest
     end
   
     def show
-      @order = current_customer.orders.find(params[:id])
+      @order = current_user.orders.find(params[:id])
     end
   
     def success; end

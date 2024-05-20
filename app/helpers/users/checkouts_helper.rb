@@ -1,3 +1,3 @@
-class Customer::CheckoutsController < ApplicationController
+module Users::CheckoutsHelper
    
   end
