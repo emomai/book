@@ -14,31 +14,28 @@ Rails.application.routes.draw do
     resources :users, only: %i[index show update]
   end
   
-  namespace :user do
+  namespace :users do
     get 'orders/index'
     get 'orders/show'
     get 'orders/success'
   end
-  namespace :user do
+  namespace :users do
     get 'cart_items/index'
   end
-  namespace :user do
+  namespace :users do
     get 'products/index'
     get 'products/show'
   end
   devise_for :admins, controllers: {
     sessions: 'admin/sessions'
   }
-  devise_for :user, controllers: {
-    sessions: 'user/sessions',
-    registrations: 'user/registrations'
-  }
-
+  devise_for :users
+  
   namespace :admin do
     resources :products, only: %i[index show new create edit update]
   end
 
-  scope module: :user do
+  scope module: :users do
     resources :products, only: %i[index show]
     resources :cart_items, only: %i[index create destroy] do
       resources :orders, only: %i[index show] do

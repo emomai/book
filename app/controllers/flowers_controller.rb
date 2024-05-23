@@ -20,6 +20,7 @@ def top
 
     def create
       flower = Flower.new(flower_params)
+      flower.user_id = current_user.id
       if flower.save!
         redirect_to :action => "index"
       else

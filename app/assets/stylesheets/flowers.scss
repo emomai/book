@@ -1,3 +1,65 @@
 // Place all the styles related to the flowers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+// トップページ
+h1{
+    position: relative;
+color: #272525ef;
+
+#title {
+  width: 100%;
+}
+     }
+
+.dog{
+    border-radius:50% ;
+}
+
+h2{
+    color:hsla(218, 57%, 5%, 0.806);/*文字色*/
+       /* 水平方向の中央揃え */
+       text-align: center;
+  }
+
+  .lossflowertohaohana{
+    width: 100px;
+    height:100px;
+}
+
+     #center{
+      display: flex;
+      justify-content: center;
+     }
+
+     .lossflower{
+      display: flex;
+     }
+     .homepagelossflowerside{
+      border-radius:50%;
+      width: 1600px;
+      height: 1600px;
+      flex-shrink: 0;
+     }
+
+.lossflower p{
+  /* 水平方向の中央揃え */
+ 
+    word-spacing: 5px;
+    letter-spacing:5px;
+    line-height: 1.6;
+    padding-bottom: 20px;
+  }
+
+h2{
+    color:#2F5597;/*文字色*/
+}
+  
+.lossflowertohaohana{
+  border-radius:50% ;
+}
+
+
+.ohanaEDGE
+{
+  transform: rotate(-20deg);
+}
