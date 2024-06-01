@@ -1,4 +1,4 @@
-class User::CartItemsController < ApplicationController
+class Users::CartItemsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_cart_item, only: %i[increase decrease destroy]
 
@@ -38,7 +38,7 @@ class User::CartItemsController < ApplicationController
     if cart_item
       cart_item.increment!(:quantity, 1)
     else
-      current_user.cart_items.build(product_id:).save
+    current_user.cart_items.build(product_id:).save
     end
   end
 
@@ -53,10 +53,4 @@ class User::CartItemsController < ApplicationController
   def cart_item_params
     params.require(:cart_item).permit(:product_id)
   end 
-
-
-
-
-
-
 end

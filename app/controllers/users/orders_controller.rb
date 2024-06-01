@@ -1,4 +1,4 @@
-class User::OrdersController < ApplicationController
+class Users::OrdersController < ApplicationController
   before_action :authenticate_user!
   
     def index
@@ -9,7 +9,8 @@ class User::OrdersController < ApplicationController
       @order = current_user.orders.find(params[:id])
     end
   
-    def success; end
+    def success
+    end
   end
   
   

@@ -1,14 +1,17 @@
-<h1>GeekTwitter</h1>
-<h3>Flower詳細</h3>
 <div class="flower">
   <p><%= @flower.body %></p>
   <p><%= @flower.created_at %></p>
 </div>
 
-<%= link_to "Tweet一覧に戻る", flowers_path %>
+<%= link_to "Homepageに戻る", flowers_path %>
 
 <%= link_to "編集する", edit_flower_path(@flower.id) %>
 
+
+<li class='px-4 text-white no-underline'>
+  <%= link_to root_path do %>
+    管理者用
+  <% end %>
 
 
 

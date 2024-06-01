@@ -1,22 +1,15 @@
-<h1>GeekTwitter</h1>
-<h3>Flower一覧</h3>
 <h3>投稿を検索</h3>
  <%= form_tag({controller:"flowers",action:"index"}, method: :get) do %>
    <%= text_field_tag :search %>
    <%= submit_tag '検索する'  %>
 <% end %>
 
-
-
-
-
-
 <%= link_to "新規投稿へ", new_flower_path %>
 <div class="flowers-container">
   <% @flowers.each do |t| %>
   <div class="flower">
 
-  <%= image_tag t.image_url, size: "250x200" if t.image? %>
+ <%= image_tag t.image_url, size: "250x200" if t.image? %>
   <%= t.user.email %>
     <%= t.body %>
     <%= t.created_at %>

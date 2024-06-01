@@ -1,4 +1,4 @@
-class User::ProductsController < ApplicationController
+class Users::ProductsController < ApplicationController
  
     def index
       @products, @sort = get_products(params)

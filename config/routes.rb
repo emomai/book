@@ -19,16 +19,15 @@ Rails.application.routes.draw do
     get 'orders/show'
     get 'orders/success'
   end
-  namespace :users do
+  namespace :user do
     get 'cart_items/index'
   end
   namespace :users do
     get 'products/index'
     get 'products/show'
   end
-  devise_for :admins, controllers: {
-    sessions: 'admin/sessions'
-  }
+  devise_for :admins
+   
   devise_for :users
   
   namespace :admin do

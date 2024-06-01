@@ -7,7 +7,8 @@ class Admin::UsersController < ApplicationController
       @users = User.latest
     end
   
-    def show; end
+    def show
+    end
   
     def update
       @user.update(user_params)
@@ -17,7 +18,7 @@ class Admin::UsersController < ApplicationController
     private
   
     def set_user
-      @user= user.find(params[:id])
+      @user= User.find(params[:id])
     end
   
     def user_params

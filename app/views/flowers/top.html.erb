@@ -1,55 +1,71 @@
 <h1>Flowers for life</h1>
  
-<%= image_tag 'dog.jpg', class: 'dog'%>
-
-<div class="lossflowertoha ohana"></div>
-
-<div id="center">
-    <%= image_tag 'lossflowertohaohana.png', class: 'lossflowertohaohana' %>
+<div id="A">
+<%= image_tag 'tikyuu.png', class: 'tikyuu' %>
     <h2>
         about loss flowers<br>
         ロスフラワーとは？
-     </h2>
+    </h2>
 </div>
 
+<div id="H">
 
 <div class="lossflower">
     <div class=lossflowertoha>
         <p>ロスフラワーという言葉を知っていますか？<br></p>
-
         <p>ロスフラワーはまだ綺麗で楽しめるにも関わらず、様々な理由で捨てられてしまうお花たちのことです。<br>
         2020年~2022年の間に起こったコロナウイルスでお祝い事やイベントが減り、人目に触れられず捨てられるお花がたくさん出ました。<br></p>
 
 
         <p>コロナが明けた今でも生産量の30~40%が廃棄されているお花たち。このサイトを通じてその現状を少しでも多くの人に知って、1本でも多く人々と触れてほしいと願っています。<br></P>
     </div>
-    <%= image_tag 'homepage lossflower side.png', class:'homepage lossflower side' %>
+    <%= image_tag 'an.png', class:'an' %>
 </div>
 
-<h2>about service<br>
-サービスについて
-</h2>
-<h3>"EDGE"
-</h3>
+<%= image_tag 'ee.png', class: 'ee' %>
 
-<p>
+<div id="B">
+    <%= image_tag 'service ohana.png', class: 'service ohana' %>
+    <h2>
+        about service<br>
+        サービスについて
+    </h2>
+</div>
+
+<div id="F">
+    
+<div class="iroiro">
+<%= image_tag 'gg.png', class: 'gg' %>
+<p class="ggg">
+
+<b>"EDGE"</b>
+<br>
+
+<span class="font-small">
 人が十人十色のように、お花にも１つとして同じ形はありません。
-
-
 そんな多様な個性を持つ人とお花の「縁」を繋ぐ意味を込めて「EDGE」と名付けました。
-</P>
-
-
-
 EDGEを通して、あなただけのお花をぜひ探してみてください。<br>
-
 <%= link_to "診断を始める", new_perfume_path, class: "link" %>
+</span>
+</p>
 
-<h2>onelineshop<br>
-オンラインショップ
-<div class="parent">
 </div>
-</h2>
+</div>
+
+<%= image_tag 'nn.png', class:'nn' %>
+
+
+<div id="C">
+<div class=ct>
+<%= image_tag 'pinku.png', class:'pinku' %>
+    <h2>
+         onelineshop<br>
+         オンラインショップ
+    </h2>
+    </div>
+<%= image_tag 'ichi.png', class:'ichi' %>
+</div>
+
 <h3>
 "1本から手に取れる手軽さ"
 </h3>
@@ -61,10 +77,50 @@ EDGEを通して、あなただけのお花をぜひ探してみてください�
 本オンラインショップでは１本から買える手軽さを実現しました。
 </P>
 
-<%= link_to "ブログ一覧へ", flowers_path %>
+<%= link_to cart_items_path do %>
+    カートへ   
+      <% end %>
+
+<div id=E>
+<%= image_tag 'nixtuki.png', class:'nixtuki' %>
+     <h2>
+      about Diary<br>
+      日々の記録
+     </h2>
+     </div>
+
+     <p>
+     お花に関わる人々の情熱、背景ストーリー、地域と繋がる活動など、知れば知るほどお花を愛でたくなる！そんな次につながるストーリをお届けしていくメディアです。
+　　 </p>
+     <%= link_to "ブログ一覧へ", flowers_path %>
 
 
-<%= image_tag 'ohanaEDGE.png',class:'ohanaEDGE' %>
+<div id="D">
+<%= image_tag 'denwa.png', class:'denwa' %>
+      <h2>
+        about contact<br>
+        お問い合わせ
+     </h2>
+</div>
+     <div class="loss">
+    <p>
+    お問い合わせをご希望のお客様は以下の住所にフォームをお送りください。
+        東京都○○区△△町◇-◇◇-◇◇◇
+    </p>
+        <%= image_tag 'cc.png', class:'cc' %>
+    </div> 
+ 
+ 
+<section id="sikaku"> 
+<p class="S">
+ ・ロスフラワーとは？<br>
+
+ ・サービスについて<br>
+
+・オンラインショップ<br>
+
+・お問い合わせ<br>
+</p>
+</section>
 
 
-<p>文章</p>
