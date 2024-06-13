@@ -2,28 +2,54 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 // トップページ
-h1{
-    position: relative;
-color: #272525ef;
+h1
+{color: black;
+margin-top: 400px;
+text-align: left;
+font-size: 25px;
+font-family: serif;
+}
 
-#title {
+
+#title
+ {
   width: 100%;
 }
-     }
+     
 
 #A{
   display: flex;
   justify-content: center;
+  font-family: serif;
+  letter-spacing: 5px;
  }
-
- .tikyuu{
+.tikyuu
+ {
   width: 70px;
   height: 70px;
   margin-top: 15px;
  margin-right: 10px; 
  }
- .lossflower{
-  display: flex;
+ .lossflower p{
+  /* 水平方向の中央揃え */
+ 
+    word-spacing: 5px;
+    letter-spacing:5px;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    font-family: serif;
+     }
+
+     .font-small{
+      font-family: serif;
+     }
+ .lossflower
+ {display: flex;}
+
+ .lossflowertoha{
+  justify-content: center;
+  padding: 20px ;
+  font-size: 20px;
  }
  .an{
   width: 400px;
@@ -41,42 +67,29 @@ color: #272525ef;
   color:hsla(218, 57%, 5%, 0.806);/*文字色*/
        /* 水平方向の中央揃え */
        text-align: center;
+       font-family: serif; 
+       letter-spacing: 5px;
  }
  #F{
   text-align: center;
   }
 
- 
-  
-  
-
-.lossflower p{
-  /* 水平方向の中央揃え */
- 
-    word-spacing: 5px;
-    letter-spacing:5px;
-    line-height: 1.6;
-    padding-bottom: 20px;
-  }
-  .lossflowertohaohana{
-    font-size: 10px;
-  }
-
-  .ee{
+ .ee{
     width: 1500px;
     height: 800px;
   }
 
 h2{
-    color:#2F5597;/*文字色*/
-}
+    color:black
+  }
   
 .nn{
   width: 1500px;
 height: 800px;
 }
 
-.nixtuki{
+.nixtuki
+{
   width: 70px;
   height: 70px;
   margin-top: 15px;
@@ -88,11 +101,10 @@ height: 800px;
   color:hsla(218, 57%, 5%, 0.806);/*文字色*/
        /* 水平方向の中央揃え */
        text-align: center; 
+       font-family: serif;
 }
 
-
-.ohanaEDGE
-{
+.ohanaEDGE{
   transform: rotate(-20deg);
 }
 
@@ -112,9 +124,11 @@ height: 800px;
 .font small{
   font-size: 10px;
 }
+
 b{
   text-align: center;
   font-size: 30px;
+  font-family: serif;
 }
 
 .iroiro{
@@ -122,11 +136,17 @@ b{
     flex-direction: row;
    align-items: center;
 }
- 
- #C{
+
+#J{
   display: flex;
   justify-content: center;
+  font-family: serif;
+  letter-spacing: 5px;
  }
+
+ #C{
+  display: flex;
+  }
  .pinku{
   width: 80px;
   height: 90px;
@@ -134,52 +154,631 @@ b{
   margin-right: 1px;
   transform: rotate(20deg);
 }
+.hitotu{
+    justify-content: center;
+    padding: 100px ;
+    font-size: 20px;
+    font-family: serif;
+}
  .ichi{
   width: 400px;
   height: 400px;
   border-radius:50% ;
   flex-shrink: 0;
-  
  }
- #D{
+.E{
   display: flex;
   justify-content: center;
+  font-family: serif;
+  
  }
-.denwa{
-  width: 60px;
-  height: 60px;
-  margin-top: 27px;
-  margin-right: 15px;
+
+ #W{
+  text-align: center;
+  display: flex;
+  font-family: serif;
+  }
+
+ .KL{
+  justify-content: center;
+  padding: 100px ;
+  font-size: 20px;
  }
  .cc{
-  width: 400px;
-  height: 400px;
-  border-radius:50% ;
-  flex-shrink: 0;
+    width: 400px;
+    height: 400px;
+    border-radius:50% ;
+    flex-shrink: 0;
+ }
+.ff{
+    width: 400px;
+    height: 400px;
+    border-radius:50% ;
+    flex-shrink: 0;
 }
+
+
+#D{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: serif;
+    letter-spacing: 5px;
+ }
+.denwa{
+    width: 60px;
+    height: 60px;
+    margin-top: 27px;
+    margin-right: 15px;
+ }
+ #Q{
+   display: flex;
+ }
+
 .loss{
-  display: flex;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
 }
   
  
-#sikaku{
-  background-color: black;
-  width: 1700px;
-  height: 250px;   
-       }
-
-.S
-  {
-  color: aliceblue;
-  font-size: 20px;
-  padding: 20px;
-  text-align: left;
+.sikaku{
+    background-color: black;
+    width: 1700px;
+    height: 270px;   
+    display: flex;
+}
+.S{
+    text-align: left;
+    color: aliceblue;
+    letter-spacing: 10px;
+    padding-top: 25px;
+    line-height:40px;
+}
+.naname{
+  border: 3px dotted black;
 }
 
- 
+
+#I{
+        justify-content: right;
+        display: flex;
+  }
+
+#U{
+    width: 1000px;
+    height: 150px;
+    background: black;
+   display: flex;
+   margin-top: 450px;
+  }
+
+#Z{
+    text-align:left;
+    background-color:#EDE070BF;
+    width: 750px;
+    height: 400px;
+    opacity: 0.9;
+    margin-top: -440px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    font-family: serif
+  }
+#E{
+    display: flex;
+    letter-spacing: 10px;
+    margin-left: 10px;
+    line-height: 80px;
+    text-align: center;
+    
+ }
+
+#K{
+    display: flex;
+    font-family: serif
+  }
+  #MM{
+    display: flex;
+    justify-content: left;
+  }
+  #UU{
+    display: flex;
+    justify-content: left;
+    margin-top: 15px;
+  }
+
+  #YY{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    }
+    .qq{
+      margin-right: 50px;
+      margin-left: 70px;
+      width: 300px;
+      height: 300px;
+    }
+#Ee{
+  text-align: center;
+  letter-spacing: 10px;
+}
+#Aa{
+  text-align: center;
+  letter-spacing: 10px;
+}
+#Tt{
+  text-align: center;
+  letter-spacing: 10px;
+}
+ .OO{
+      margin-right: 50px;
+      margin-left: 50px;
+      width: 300px;
+      height: 300px;
+      
+    }
+    .vv{
+      margin-right: 50px;
+      margin-left: 50px;
+      width: 300px;
+      height: 300px;
+    }
+#ee{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+#Ww{
+  text-align: center;
+  letter-spacing: 10px;
+}
+.taba{
+      margin-right: 40px;
+      margin-left: 60px;
+      width: 300px;
+      height: 300px;
+      
+    }
+    #Rr{
+      text-align: center;
+      letter-spacing: 10px;
+    }
+    .tababab{
+      margin-right: 40px;
+      margin-left: 70px;
+      width: 300px;
+      height: 300px;
+    }
+    #Yy{
+      text-align: center;
+      letter-spacing: 10px;
+    }
+    .tabanba{
+      margin-right: 30px;
+      margin-left: 60px;
+      width: 300px;
+      height: 300px;
+    }
+    .bara{
+      margin-right: 120px;
+      margin-left: 60px;
+      width: 300px;
+      height: 300px;
+    }
+    .kiirio{
+      margin-right: 100px;
+      margin-left: 60px;
+      width: 320px;
+      height: 320px;
+    }
+    .siro{
+      width: 300px;
+      height: 300px;
+      margin-left: 110px;
+     }
+      
+    #TT{
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 70px;
+      }
+
+    #Ff{
+      text-align: center;
+      letter-spacing: 10px;
+    }  
+    #Dd{
+      text-align: center;
+      letter-spacing: 10px;
+    }
+    #Uu{
+      text-align: center;
+      letter-spacing: 10px;
+    }
+#Kk{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px; 
+}
+    #Bb{
+      text-align: center;
+      letter-spacing: 10px;
+    }
+    .te{
+      margin-right: 30px;
+      margin-left: 60px;
+      width: 300px;
+      height: 300px;
+      
+    }
+    #Cc{
+      text-align: center;
+      letter-spacing: 10px;
+    }
+    .cx{
+      margin-right: 10px;
+      margin-left: 80px; 
+      width: 300px;
+      height: 300px;
+    }
+    #Xx{
+      text-align: center;
+      letter-spacing: 10px;
+    }
+    .bin{
+      margin-right: 160px;
+      margin-left: 90px;
+      width: 300px;
+  height: 300px;
+    }
+#sqare{
+  width: 280px;
+	height: 100px;
+	background:#EDE070BF;
+ margin-left: 470px;
+ text-align: center;
+ font-size: 30px;
+ padding-top: 3px;
+}
+#sushi{
+  margin-top: 70px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 70px;
+  
+}
+.under{
+  text-decoration: underline;
+ text-decoration-color: yellow;
+}
+#line{
+  border-top: 3px solid black;
+}
+.sns{
+  text-align: left;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-family: serif;
+  }
+  .noro{
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-left: 500px;
+  }
+ .tegami{
+    width: 90px;
+    height: 90px;
+    transform: rotate(30deg);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .haxtupatuki{
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+  }
 
 
+#search5back{
+    margin:0 auto;  
+            }
+
+#searchbox5{
+      width:200px;
+      margin:0 auto;
+      padding: 50px 0 30px;
+          }
+
+#search5{
+      background: url(data:image/png;base64,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) no-repeat 10px 6px #444;
+      border:0 none;
+      font: bold 12px Arial, Helvetica, Sans-serif;
+      
+      width:150px;
+      padding:6px 15px 6px 35px;
+      border-radius:20px;
+      text-shadow:0 2px 2px white(0,0,0,0.3);
+      box-shadow:0 1px 0 rgba(255,255,255,0.1), 0 1px 3px (0,0,0,0.2) inset;
+  
+   }
+
+#search5:focus {
+    width: 200px;
+    outline:0;
+  }
 
 
+#search51{
+    background: url(data:image/png;base64,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) no-repeat 10px 6px #fcfcfc;
+    border:1px solid #e4efd8;
+    font: bold 12px Arial, Helvetica, Sans-serif;
+    color:#e4efd8;
+    width:150px;
+    padding:6px 15px 6px 35px;
+    border-radius:20px;
+    text-shadow:0 2px 3px white(214, 196, 196, 0.1);
+    box-shadow:0 1px 3px white(0,0,0,0.15) inset;
+}
+
+#search51:focus{
+    width:200px;
+    outline:0;
+}
+    
+
+.byline p a{
+  color:#0000000c;
+  text-decoration:none;
+}
+.G{
+  font-weight: bold;/*太字に*/
+  text-decoration: none;/*下線消す*/
+  background:#EDE070BF; 
+  color:white;/*文字を白に*/
+  padding:5px 10px;/*内側の余白*/
+  border-radius: 20px;/*角を丸くする*/
+  font-family: 'Avenir','Arial';/*フォントをいい感じに*/
+}
+/*以下カーソルを当てたとき*/
+.link_button:hover {
+  background: silver;/*背景色をシルバーに*/
+  text-decoration: none;/*下線を消す*/
+}
+
+/*以下訪問済みのデザイン*/
+.link_button:visited {
+  color: gray;/*文字をグレイに*/
+}
+
+.box14{
+  padding: 0.2em 0.5em;
+  margin: 2em 0;
+  background: #EDE070BF;
+  box-shadow: 0px 0px 0px 10px #EDE070BF;
+  border: dashed 2px white;
+  text-align: center;
+  color: #fcfcfc;
+}
+.box14 p {
+  margin: 0; 
+  padding: 0;
+}
+
+#T{
+  text-align: center;
+  align-items: center;
+}
 
 
+.flower-container{
+  font-weight: bold
+}
+
+.dd{
+width: 600px;
+height: 1000px;
+text-align: right;
+}
+
+.yazirusi{
+  color: yellow;
+}
+.logo{
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  
+}
+.real{
+  margin-left: 550px;
+}
+.pien{
+  justify-content: left;
+  }
+
+.migini{
+  margin-left: 960px;
+ margin-top: -270px;
+}
+.iraira{
+margin-left: 980px;
+
+}
+.cosha{
+  margin-left: 980px;
+}
+.tonbo{
+  margin-left: 980px;
+}
+
+.loose-leaf{
+  background: black;
+ width: 1700px;
+ height: 300px;
+  color: #fcfcfc;
+  display: flex;
+
+}
+
+.hoge{
+  color: #fcfcfc;
+}
+.mozaiku{
+width: 1250px;
+height: 800px;
+}
+
+
+.sitabox{
+  background-color: black;
+    width: 1700px;
+    height: 30px;  
+    margin-top: -470px;
+  }
+
+  #sindan{
+    font-size: 20px;
+    font-family: serif;
+    text-align: center;
+    padding: 30px;
+    }
+  #suiyou{
+    font-size: 20px;
+    font-family: serif;
+    text-align: center;
+    padding: 30px;
+  }
+  .mada{
+    font-size: 20px;
+    font-family: serif;
+    text-align: center;
+    padding: 30px;
+  }
+
+
+  .btn-gradient-3d-simple {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #5e7fca;
+  }
+  
+  .btn-gradient-3d-simple:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+  }
+  .tarako{
+    width: 600px;
+    height: 800px;
+  }
+  .hennsinn{
+   display: flex;  
+  }
+  .siteyo{
+    width: 1000px;
+    height: 150px;
+    background: black;
+   margin-top: 300px;
+   font-size: 40px;
+   color: #ffffff;
+   font-family: serif;
+    letter-spacing: 15px;
+  }
+
+  .wakusen{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 60px #EDE070BF;
+    width: 1100px;
+    height: 450px;
+    margin-bottom: 50px;
+  }
+
+  .kayou{
+    width: 200px;
+    height: 200px;
+    transform: rotate(20deg);
+    margin-right: 850px;
+  }
+  .getuyou{
+    width: 200px;
+    height: 200px;
+    transform: rotate(-20deg);
+    margin-left: 850px;
+  }
+  .kinyou{
+ text-align: center;
+ font-size: 25px;
+ font-family: serif;
+ line-height: 50px;
+  }
+
+  .intoro{
+    font-size: 25px;
+   font-family: serif;
+   padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 60px #EDE070BF;
+  }
+
+.button{
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg,  #EDE070BF 0%, #ff8b5f 100%);
+  transition: .4s;
+}
+
+.btn-social-icon-instagram__square:before {
+  content: '';
+  position: absolute;
+  top: 23px;
+  left: -18px;
+  width: 60px;
+  height: 60px;
+  background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+}
+
+.taihen{
+  font-size: 30px;
+  font-family: serif;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+.mokuyou{
+  font-size: 20px;
+  font-family: serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.saikoro{
+font-size: 20px;
+font-family: serif;
+text-align: center;
+}
+
+.tyoxtuto{
+  text-align: center;
+  font-size: 25px;
+  font-family: serif;
+  margin-top: 20px;
+}

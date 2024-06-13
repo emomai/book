@@ -13,12 +13,19 @@
 
   <body>
   <header>
+  <div class="naname"></div>
+  <div class="loose-leaf">
+ 
   <div class="header-list">
-
-          <%= link_to root_path do %>
-           Homepage
+    <%= link_to root_path do %>
+            Homepage
+           <div class="pien">
+            <%= image_tag 'logo.png', class:'logo' %>
+            </div>
           <% end %>
-       
+
+
+ <div class="migini">
         <ul>
             <% if admin_signed_in? %>
               <li>                              
@@ -54,8 +61,8 @@
               </li>
             <% end %>
           </ul>
-      
-
+          </div>
+<div class="iraira">
   <% if flash[:notice] %>
    
       <%= notice %>
@@ -69,53 +76,88 @@
 
   <li class='text-white no-underline'>
   <%= link_to products_path do %>
-   商品一覧
-  <% end %>
-</li>
+在庫一覧
+   <% end %>
+   </li>
+   </div>
 
+
+<div class="cosha">
 <div class="bg-white p-6  md:mx-auto">
   
  
       <%= link_to users_orders_index_path do %>
        
-          Go order history
+            カートへ
         
       <% end %>
-   
-</div>
-  
+   </div>
+  </div>
+
+
+  <div class="tonbo">
 <div class="py-1">
   <%= link_to edit_user_registration_path do %>
-    Account settings
+    <%= link_to "Account settings", "/", class: "hoge" %>
+    
   <% end %><br>
   <%= link_to users_orders_index_path do %>
-    Order Histories
+    <%= link_to "Order histories", "/", class: "hoge" %>
+    
   <% end %>
 </div>
 
 <li class='px-4 text-white no-underline'>
-  <%= link_to admin_products_path do %>
-    管理者用商品
+  <%= link_to admins_products_path do %>
+    <%= link_to "管理者用商品", "/", class: "hoge" %>
+    
   <% end %>
 </li>
 
 <li class='px-4 text-white no-underline'>
   <%= link_to admin_users_index_path do %>
-顧客一覧
-  <% end %>
+    <%= link_to "顧客一覧", "/", class: "hoge" %>
+ <% end %>
 </li>
-
-
-  
-  </header>
-  <main>
+ </header>
+ 
   <%= yield %>
   </main>
   </body>
-  
-</html>
+  </html>
+  </div>
+  </div>
+<footer>
+<div class="sns">
+<p>~SNS~</P>
+</div>
+<div class="noro">
+<%= image_tag 'YouTubelogo.png', class:'YouTubelogo' %>
+<%= image_tag 'inssta.png', class:'inssta' %>
+<%= image_tag 'X.png', class:'X' %>
+</div>
 
 
+<div class="sikaku"> 
+    <p class="S">
+    
+    ・ロスフラワーとは？<br>
 
+    ・EDGE☞ <%= link_to "診断機能へ", "/", class: "yazirusi" %><br>
+
+   
+    ・オンラインショップ☞  <%= link_to "カートへ", "/", class: "yazirusi" %><br>
+
+    
+    ・日々の記録☞ <%= link_to "ブログ一覧へ", "/", class: "yazirusi" %><br>
+    
+    ・お問い合わせ<br>
+    </p>
+  <div class="real">
+    <%= image_tag 'logo.png', class:'logo' %>
+  </div>
+    
+</div>
+</footer>
 
 

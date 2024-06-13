@@ -1,8 +1,144 @@
-<h3>投稿を検索</h3>
- <%= form_tag({controller:"flowers",action:"index"}, method: :get) do %>
-   <%= text_field_tag :search %>
-   <%= submit_tag '検索する'  %>
+<div class="naname"></div>
+
+<div id="I">
+<div id="U"></div>
+
+ <%= image_tag 'dd.png', class: 'dd' %>
+
+</div>
+
+
+<div id="Z">
+<h3>Blog</h3>
+<div id="E">
+☞PRODUCT<br>
+☞PEOPLE<br>
+☞COMMUNITY<br>
+<%= form_tag({controller:"flowers",action:"index"}, method: :get) do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag 'search'  %>
+
+
+  <div id="search5back">
+
+  <form method="get" action="/search" id="searchbox5">
+      <input id="search5" name="q" type="text" size="40" placeholder="Search..." />
+  </form>
+</div>
+</form>
 <% end %>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="K">
+</div>
+
+
+<div id="MM">
+   
+        <h2>
+            NEWS<br>
+            ニュース
+        </h2>
+        <%= image_tag 'tegami.png', class: 'tegami' %>
+</div>
+
+<div id="UU">
+<%= image_tag 'haxtupatuki.png', class: 'haxtupatuki' %>
+         <h2>
+            about product<br>
+            商品
+        </h2>
+       </div>
+
+<div id="YY">
+<div id="Ee">
+<%= image_tag 'qq.png', class:'qq' %><br>
+ <p>1000円</p>
+ </div>
+ <div id="Aa">
+<%= image_tag 'vv.png', class:'vv' %><br>
+<p>1500円</p>
+</div>
+<div id="Tt">
+<%= image_tag 'OO.png', class:'OO' %><br>
+<p>800円</p>
+</div>
+</div>
+
+
+<div id="ee">
+  <div id="Ww">
+    <%= image_tag 'taba.png', class:'taba' %>
+    <p>2000円</p>
+  </div>
+  <div id="Rr">
+    <%= image_tag 'tababab.png', class:'tababab' %>
+    <p>1900円</P>
+  </div>
+  <div id="Yy">
+    <%= image_tag 'tabanba.png', class:'tabanba' %>
+    <P>3000円<p>
+  </div>
+</div>
+
+<div id="TT">
+  <div id="Ff">
+    <%= image_tag 'bara.png', class:'bara' %>
+    <p>3500円</P>
+  </div>
+  <div id="Dd">
+    <%= image_tag 'kiiro.png', class:'kiiro' %>
+    <p>2900円</P>
+  </div>
+  <div id="Uu">
+    <%= image_tag 'siro.png', class:'siro' %>
+    <P>3400円</P>
+    </div>
+</div>
+
+<div id="Kk">
+  <div id="Bb">
+        <%= image_tag 'te.png', class:'te' %> 
+        <p>2500円</P>
+    </div>
+  <div id="Cc">
+        <%= image_tag 'cx.png', class:'cx' %>
+        <p>4000円</P>
+      </div>
+    <div id="Xx">
+          <%= image_tag 'bin.png', class:'bin' %>
+          <p>2900円</p>
+      </div>
+    </div>
+
+    <div id="sqare">
+    <p>view more☟</p>
+    </div>
+
+    <div id="sushi">
+    <p>⚠ご購入前に必ずお読み下さい<br>
+    ～発送に関して～<br>
+・お届けは発送通知から<div class="under">２～３日ほど</div>になります。繊細な商品ですので発送中花びらが多少傷つく場合があります。ご承知の上、ご購入をお願いします。<br>
+・発送料は<div class="under">２０００円以上で無料</div>になります。<br>
+・商品受け取りはご自宅だけでなく、お近くのコンビニエンスストアや郵便局でも可能です。購入した後、送られますメールに<div class="under">QRコードが記載されています</div>ので、それを店舗で読み取ってください。<br>
+・ご購入後、私情によるやむを得ないキャンセルは<div class="under">受けかねます</div>のでご承知ください。</p>
+   </div>
+    
+
+   <div id="line"></div>
+
+   
+    
+
+
+
+
+
 
 <%= link_to "新規投稿へ", new_flower_path %>
 <div class="flowers-container">
@@ -15,8 +151,8 @@
     <%= t.created_at %>
     <%= link_to "詳細へ", flower_path(t.id) %>  
   <%= link_to "編集する", edit_flower_path(t.id) %>
+ 
   <%= button_to "削除する", flower_path(t.id), method: :delete %>  
 
   </div>
   <% end %>
-</div>

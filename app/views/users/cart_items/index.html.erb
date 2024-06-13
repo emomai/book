@@ -105,6 +105,6 @@
   </div>
 
   <td class="p-3">
-  <span class="text-lg"><%= number_to_currency(cart_item.line_total, unit: "¥", strip_insignificant_zeros: true) %></span>
+  <span class="text-lg"><%= number_to_currency(@cart_items.line_total, unit: "¥", strip_insignificant_zeros: true) %></span>
 </td>
 <% end %>

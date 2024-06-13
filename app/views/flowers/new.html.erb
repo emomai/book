@@ -1,20 +1,28 @@
-<h1>(自分の題名)</h1>
+<div class="box14">
 <h3>新規投稿ページ</h3>
-<%=form_for @flower do |f| %>
+</div>
+<%= form_for @flower do |f| %>
 
-
-  <div class="field">
+  <div id="T">
+<div class="field">
     <%= f.label :"body" %>
-    <%= f.text_field :body, :size => 140 %>
+    <%= f.text_field :body, :size => 40 %>
   </div>
 
  
-  <div class="field">
-    <%= f.label :"image" %>
-    <%= f.file_field :image %>
-  </div>
 
-  <%= f.submit "Tweetする" %>
-  <% end %>
-  
-  <%= link_to "一覧に戻る", flowers_path %>
+
+ <div class="G">
+  <%= f.label "image" %>
+  <%= f.file_field :image, :size => 40 %>
+   </div>
+   </div>
+
+   <%= f.submit "tweetする" %>
+  </div>
+   
+   <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+   <% end %>
+   </div>
+
+

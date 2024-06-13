@@ -1,8 +1,26 @@
+<div class="hennsinn">
+<div class="siteyo">
+<p>〝EDGE〟</p>
+</div>
+<%= image_tag 'tarako.png', class:'tarako' %>
+</div>
+<div class="kinyou">
+<%= image_tag 'kayou.png', class:'kayou' %>
+<p>日常に彩るお花は見た目だけでなく、意味からも楽しめます。<br>
+
+組み合わせによって自分だけのお花が見つかります</p>
+<%= image_tag 'getuyou.png', class:'getuyou' %>
+</div>
+
+
+<div class="wakusen">
 <%= form_for(@perfume, class: 'form-horizontal', role: 'form') do |f| %>
         <div class="flower-container">
             <div class="col-12">
+            <div id="sindan">
                 <p>Q1.誰と楽しむ？</p>
-            </div>
+            
+            
             <div class="col-6">
                 <%= f.radio_button :question1, "1", id: "custom_id1" %>
                 <label for="custom_id1">自分と</label>
@@ -10,12 +28,15 @@
                 <label for="custom_id2">友達と</label>
                 <%= f.radio_button :question1, "3", id: "custom_id3" %>
                 <label for="custom_id3">家族・親戚と</label> 
-                <%= f.radio_button :question1, "4", id: "custom_id4" %>  
-                <label for="custom_id4">恋人と</label>
+              
                 </div>
+
+
+                <div id="suiyou">
                 <div class="col-12">
                 <p>Q2.どんなシーンで？ …</p>
-                </div> 
+                
+                
                 <div class="col-6">
                     <%= f.radio_button :question2, "1", id: "custom_id5" %>
                     <label for="custom_id5">自宅用に</label>
@@ -23,9 +44,9 @@
                 <label for="custom_id6">プレゼントに</label>
                 <%= f.radio_button :question2, "3", id: "custom_id7" %>
                 <label for="custom_id7">お祝いの日に</label>
-                <%= f.radio_button :question2, "4", id: "custom_id8" %>
-                <label for="custom_id8">お墓参りに</label>
+              
                 </div>   
+             <div class="mada">
             <div class="col-12">
             <p>Q3.選ぶお花のテーマは？</p>
             <div class="col-6">
@@ -35,25 +56,12 @@
             <label for="custom_id10">香りから癒されたい</label>
             <%= f.radio_button :question3, "3", id: "custom_id11" %>
                 <label for="custom_id11">季節を楽しみたい</label
-                <%= f.radio_button :question3, "4", id: "custom_id12" %>
-                <label for="custom_id12">珍しいお花を発見したい</label>
-                <%= f.radio_button :question3, "5", id: "custom_id13" %>
-               
-     <div class="sindanbotan">
-     <%= f.submit " 結果 " %>
+
+                </div>
+            <%= f.submit  "結果",  class: "button" %>     
+         <% end %>                 
+
+     </div>
     </div>
-    <% end %>
-        
-
-
-
-
-
-
-
-
-
-
-
-
+    
    

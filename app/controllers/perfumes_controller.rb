@@ -3,9 +3,7 @@ class PerfumesController < ApplicationController
         @perfume = Perfume.new
     end
 
-    def show
-        @perfume = Perfume.find_by(id: params[:id])
-    end
+  
 
     def create
         perfume = Perfume.new(perfume_params)
@@ -15,6 +13,10 @@ class PerfumesController < ApplicationController
         else
             redirect_to :action => "new"
         end
+    end
+
+    def show
+        @perfume = Perfume.find_by(id: params[:id])
     end
   
   private

@@ -34,11 +34,11 @@ class Users::CartItemsController < ApplicationController
   end
 
   def increase_or_create(product_id)
-    cart_item = current_user.cart_items.find_by(product_id:)
+    cart_item = current_user.cart_items.find_by(product_id: product_id)
     if cart_item
       cart_item.increment!(:quantity, 1)
     else
-    current_user.cart_items.build(product_id:).save
+    current_user.cart_items.build(product_id: product_id).save
     end
   end
 

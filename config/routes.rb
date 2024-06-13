@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
- 
+
 
   namespace :admin do
     get 'users/index'
@@ -26,11 +26,15 @@ Rails.application.routes.draw do
     get 'products/index'
     get 'products/show'
   end
-  devise_for :admins
-   
-  devise_for :users
-  
-  namespace :admin do
+  devise_for :admins, controllers: {
+    sessions: 'admin/sessions'
+  }
+  devise_for :users, controllers: {
+    sessions: 'user/sessions',
+    registrations: 'user/registrations'
+  }
+
+  namespace :admins do
     resources :products, only: %i[index show new create edit update]
   end
 
@@ -56,7 +60,6 @@ Rails.application.routes.draw do
   resources :flowers 
   resources :perfumes
   root 'flowers#top'
-
  
    end
 

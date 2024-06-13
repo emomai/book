@@ -1,48 +1,221 @@
-<div class="mb-6 text-center">
-  <span class="text-3xl font-bold">
-    Order Histories
-  </span>
+
+
+
+<div class="naname"></div>
+
+<div id="I">
+<div id="U"></div>
+
+ <%= image_tag 'dd.png', class: 'dd' %>
+
 </div>
 
-<% if @orders.count == 0 %>
-  <div class='mx-auto max-w-3xl'>
-    <p class='mb-8 text-xl text-center'>No history</p>
-    <div class='flex justify-center'>
-      <%= link_to products_path, class: 'group inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 p-0.5 font-medium text-gray-900 hover:text-white focus:ring-4 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500' do %>
-        <span class='rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0'>
-          Find Products
-        </span>
-      <% end %>
-    </div>
+
+<div id="Z">
+<h3>Blog</h3>
+<div id="E">
+☞PRODUCT<br>
+☞PEOPLE<br>
+☞COMMUNITY<br>
+<%= form_tag({controller:"orders",action:"index"}, method: :get) do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag 'search'  %>
+
+
+  <div id="search5back">
+
+  <form method="get" action="/search" id="searchbox5">
+      <input id="search5" name="q" type="text" size="40" placeholder="Search..." />
+  </form>
+</div>
+</form>
+<% end %>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="K">
+</div>
+
+
+<div id="MM">
+   
+        <h2>
+            NEWS<br>
+            ニュース
+        </h2>
+        <%= image_tag 'tegami.png', class: 'tegami' %>
+</div>
+
+<div id="UU">
+<%= image_tag 'haxtupatuki.png', class: 'haxtupatuki' %>
+         <h2>
+            about product<br>
+            商品
+        </h2>
+       </div>
+
+<div id="YY">
+<div id="Ee">
+<%= image_tag 'qq.png', class:'qq' %><br>
+ <p>1000円</p>
+ </div>
+ <div id="Aa">
+<%= image_tag 'vv.png', class:'vv' %><br>
+<p>1500円</p>
+</div>
+<div id="Tt">
+<%= image_tag 'OO.png', class:'OO' %><br>
+<p>800円</p>
+</div>
+</div>
+
+
+<div id="ee">
+  <div id="Ww">
+    <%= image_tag 'taba.png', class:'taba' %>
+    <p>2000円</p>
   </div>
-<% else %>
-  <div class="w-full px-3">
-    <div class="shadow-soft-xl rounded-2xl bg-clip-border w-full lg:w-3/5 flex  mx-auto">
-      <div class="w-full">
-        <ul class="rounded-lg">
-          <% @orders.each do |order| %>
-            <%= link_to order_path(order) do %>
-              <li class="py-7 px-6 mb-4 rounded-t-inherit rounded-xl bg-gray-50">
-                <div class="mb-5">
-                  <p class="mb-4 leading-normal text-xl"><%= l order.created_at, format: :short %></p>
-                  <p class="text-slate-700 inline-block font-bold text-center uppercase align-middle transition-all text-lg">
-                    <%= number_to_currency(order.billing_amount, unit: "¥", strip_insignificant_zeros: true) %>
-                  </p>
-                  <span class="ml-2 bg-blue-100 text-blue-800 text-xs font-semibold p-2 rounded">
-                    <%= order.status %>
-                  </span>
-                </div>
-                <div>
-                  <p class="mb-2 leading-tight text-sm">Name: <span class="font-semibold text-slate-700 sm:ml-2"><%= order.name %></span></p>
-                  <p class="mb-2 leading-tight text-sm">Postal Code: <span class="font-semibold text-slate-700 sm:ml-2"><%= order.postal_code %></span></p>
-                  <p class="mb-2 leading-tight text-sm">Prefecture: <span class="font-semibold text-slate-700 sm:ml-2"><%= order.prefecture %></span></p>
-                  <p class="mb-2 leading-tight text-sm">Address: <span class="font-semibold text-slate-700 sm:ml-2"><%= order.address1 %> <%= order.address2 %></span></p>
-                </div>
-              </li>
-            <% end %>
-          <% end %>
-        </ul>
+  <div id="Rr">
+    <%= image_tag 'tababab.png', class:'tababab' %>
+    <p>1900円</P>
+  </div>
+  <div id="Yy">
+    <%= image_tag 'tabanba.png', class:'tabanba' %>
+    <P>3000円<p>
+  </div>
+</div>
+
+<div id="TT">
+  <div id="Ff">
+    <%= image_tag 'bara.png', class:'bara' %>
+    <p>3500円</P>
+  </div>
+  <div id="Dd">
+    <%= image_tag 'kiiro.png', class:'kiiro' %>
+    <p>2900円</P>
+  </div>
+  <div id="Uu">
+    <%= image_tag 'siro.png', class:'siro' %>
+    <P>3400円</P>
+    </div>
+</div>
+
+<div id="Kk">
+  <div id="Bb">
+        <%= image_tag 'te.png', class:'te' %> 
+        <p>2500円</P>
+    </div>
+  <div id="Cc">
+        <%= image_tag 'cx.png', class:'cx' %>
+        <p>4000円</P>
+      </div>
+    <div id="Xx">
+          <%= image_tag 'bin.png', class:'bin' %>
+          <p>2900円</p>
       </div>
     </div>
+
+    <div id="sqare">
+    <p>view more☟</p>
+    </div>
+
+    <div class="mb-6 text-center">
+    <span class="text-3xl font-bold">
+    <div class="taihen">
+      注文履歴🛒
+    </span>
   </div>
-<% end %>
+  <div class="mokuyou">
+  <% if @orders.count == 0 %>
+    <div class='mx-auto max-w-3xl'>
+      <p class='mb-8 text-xl text-center'>注文履歴はまだありません</p>
+      <div class='flex justify-center'>
+        <%= link_to products_path, class: 'group inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 p-0.5 font-medium text-gray-900 hover:text-white focus:ring-4 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500' do %>
+          <span class='rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0'>
+            ☞在庫状況を確認する
+          </span>
+        <% end %>
+      </div>
+    </div>
+    
+  <% else %>
+    <div class="w-full px-3">
+      <div class="shadow-soft-xl rounded-2xl bg-clip-border w-full lg:w-3/5 flex  mx-auto">
+        <div class="w-full">
+          <ul class="rounded-lg">
+            <% @orders.each do |order| %>
+              <%= link_to order_path(order) do %>
+                <li class="py-7 px-6 mb-4 rounded-t-inherit rounded-xl bg-gray-50">
+                  <div class="mb-5">
+                    <p class="mb-4 leading-normal text-xl"><%= l order.created_at, format: :short %></p>
+                    <p class="text-slate-700 inline-block font-bold text-center uppercase align-middle transition-all text-lg">
+                      <%= number_to_currency(order.billing_amount, unit: "¥", strip_insignificant_zeros: true) %>
+                    </p>
+                    <span class="ml-2 bg-blue-100 text-blue-800 text-xs font-semibold p-2 rounded">
+                      <%= order.status %>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="mb-2 leading-tight text-sm">Name: <span class="font-semibold text-slate-700 sm:ml-2"><%= order.name %></span></p>
+                    <p class="mb-2 leading-tight text-sm">Postal Code: <span class="font-semibold text-slate-700 sm:ml-2"><%= order.postal_code %></span></p>
+                    <p class="mb-2 leading-tight text-sm">Prefecture: <span class="font-semibold text-slate-700 sm:ml-2"><%= order.prefecture %></span></p>
+                    <p class="mb-2 leading-tight text-sm">Address: <span class="font-semibold text-slate-700 sm:ml-2"><%= order.address1 %> <%= order.address2 %></span></p>
+                  </div>
+                </li>
+              <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+
+
+
+
+
+
+
+
+    <div id="sushi">
+    <p>⚠ご購入前に必ずお読み下さい<br>
+    ～発送に関して～<br>
+・お届けは発送通知から<div class="under">２～３日ほど</div>になります。繊細な商品ですので発送中花びらが多少傷つく場合があります。ご承知の上、ご購入をお願いします。<br>
+・発送料は<div class="under">２０００円以上で無料</div>になります。<br>
+・商品受け取りはご自宅だけでなく、お近くのコンビニエンスストアや郵便局でも可能です。購入した後、送られますメールに<div class="under">QRコードが記載されています</div>ので、それを店舗で読み取ってください。<br>
+・ご購入後、私情によるやむを得ないキャンセルは<div class="under">受けかねます</div>のでご承知ください。</p>
+   </div>
+    
+
+   <div id="line"></div>
+
+   
+    
+
+
+
+
+
+
+<%= link_to "新規投稿へ", new_flower_path %>
+<div class="flowers-container">
+  <% @orders.each do |t| %>
+  <div class="flower">
+
+ <%= image_tag t.image_url, size: "250x200" if t.image? %>
+  <%= t.user.email %>
+    <%= t.body %>
+    <%= t.created_at %>
+    <%= link_to "詳細へ", flower_path(t.id) %>  
+  <%= link_to "編集する", edit_flower_path(t.id) %>
+ 
+  <%= button_to "削除する", flower_path(t.id), method: :delete %>  
+
+  </div>
+  <% end %>
+
